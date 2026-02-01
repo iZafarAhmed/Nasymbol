@@ -10,7 +10,7 @@ export default async function handler(req, res) {
   }
 
   try {
-    const url = 'https://api.nasdaq.com/api/quote/basic?&symbol=aapl%7cstocks&symbol=msft%7cstocks&symbol=amd%7cstocks&symbol=qqq%7cetf&symbol=btc%7ccrypto&symbol=ndx%7cindex&symbol=comp%7cindex&symbol=tsla%7cstocks&symbol=amzn%7cstocks';
+    const url = 'https://api.nasdaq.com/api/quote/basic?&symbol=aapl%7cstocks&symbol=msft%7cstocks&symbol=amd%7cstocks&symbol=tsla%7cstocks&symbol=amzn%7cstocks';
 
     // Nasdaq blocks requests without proper headers
     const response = await fetch(url, {
